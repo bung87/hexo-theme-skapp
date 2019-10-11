@@ -18,12 +18,14 @@ body {
     background-color: $bgc--main;
 }
 
-.link {
+.link,a:link,a:visited {
     font-size: inherit;
     text-decoration: none;
+    color: $main-color--hover;
+   
     transition: color $transition;
 
     &:hover {
-        color: $main-color--hover;
+        color:$main-color ;
     }
 }

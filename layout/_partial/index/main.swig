@@ -11,5 +11,5 @@
         {{ s_paginator(3) }}
     </div>
 
-    {% include '../common/sidebar.swig' %}
+   
 </main>

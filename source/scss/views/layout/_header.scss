@@ -70,14 +70,15 @@ body {
         position: absolute;
         height: 100%;
         width: 100%;
-        background-color: rgba(64, 84, 90, 0.6);
+        background-image: linear-gradient(255deg,#4940ff,#35b2e6);
     }
 
     &--small {
         .page__navbar {
             height: $nav-height;
             background: $main-color;
-            background: linear-gradient(to right, $main-color 35%, $main-color--hover 100%);
+            background-image: linear-gradient(255deg,#4940ffd4,#35b2e69c);
+            border-bottom: 1px solid rgba(255,255,255,0.3);
         }
 
         .page__logo {

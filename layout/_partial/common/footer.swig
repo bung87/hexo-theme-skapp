@@ -3,23 +3,28 @@
     <section class="footer__top">
         <div class="page__container footer__container">
             {% set about = get_setting('about') %}
+            {% if about %}
             <div class="footer-top__item footer-top__item--2">
-                <h3 class="item__title">{{ __('footer.about') }}</h3>
+               {#<h3 class="item__title">{{ __('footer.about') }}</h3>#} 
                 <div class="item__content">
                     <p class="item__text">{{ about.info }}</p>
                     <ul class="footer__contact-info">
+                     {% if about.address %}
                         <li class="contact-info__item">
                             <i class="iconfont icon-address"></i>
                             <span>{{ about.address }}</span>
                         </li>
+                     {% endif %}
+                     {% if about.email %}
                         <li class="contact-info__item">
                             <i class="iconfont icon-email2"></i>
                             <span>{{ about.email }}</span>
                         </li>
+                     {% endif %}
                     </ul>
                 </div>
             </div>
-
+            {% endif %}
             {% set img = get_setting('qrcode', 'avatar') %}
             {% if img %}
                 <div class="footer-top__item footer__image">
@@ -49,9 +54,9 @@
     <section class="footer__bottom">
         <div class="page__container footer__container">
             <p class="footer__copyright">©
-                <a href="https://github.com/Mrminfive/hexo-theme-skapp" target="_blank">Skapp</a> 2017 powered by
+                2019 theme by <a href="https://github.com/Mrminfive/hexo-theme-skapp" target="_blank">Skapp</a>  powered by
                 <a href="http://hexo.io/" target="_blank">Hexo</a>, made by 
-                <a href="https://github.com/Mrminfive" target="_blank">minfive</a>.
+                <a href="https://github.com/bung87" target="_blank">Bung</a>.
             </p>
             <ul class="footer__social-network clearfix">
                 {% if site.data.contact %}
