@@ -6,7 +6,7 @@ body {
     @media screen and (min-width: $mq-desktop) {
         .page__posts {
             margin-top: -2 * $pad;
-            margin-right: -2 * $pad;
+            margin-right: -2 * $pad ;
         }
 
         .page__post {
@@ -16,13 +16,13 @@ body {
 
     @media screen and (min-width: $mq-desktop--wide) {
         .page__post {
-            width: 290px;
+            width: 287px;
         }
     }
 }
 
 .page__posts {
-    margin-top: -2 * $pad;
+    margin-top: -2 * $pad ;
     margin-right: 0;
 }
 
